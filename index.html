@@ -20,25 +20,29 @@
   <div id="macro-wrapper">
     <!--barra in alto di ricerca-->
     <header>
-      <div class="container-fluid bg-light py-4">
-        <div class="row justify-content-center">
+      <div class="container-fluid bg-my-white">
+        <div class="row justify-content-center align-items-center pt-3">
           <!--logo (big e small)-->
-          <div class="col-lg-2">
-            <div class="logo-wrapper ms-2">
+          <div class="col-2 col-md-1 col-lg-2">
+            <div class="logo-wrapper ms-2 d-none d-lg-block">
               <img src="img/logo.svg" alt="boolean-logo">
+            </div>
+            <div class="small-logo-wrapper ms-2 d-lg-none">
+              <img src="img/mobile-logo.png" alt="boolean-logo-small">
             </div>
           </div>
           <!--searchbar-->
-          <div class="col-lg-8">
+          <div class="col-8 col-md-10 col-lg-8">
             <div class="input-group flex-nowrap">
               <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
               <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="addon-wrapping">
             </div>
           </div>
           <!--icone e dropdown-->
-          <div class="col-lg-2">
-            <ul class="d-flex">
-              <li class="dropdown">
+          <div class="col-2 col-md-1 col-lg-2">
+            <ul class="m-0 ps-0 d-flex">
+              <!--lista-->
+              <li id="list" class="dropdown">
                 <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-list"></i>
                 </button>
@@ -54,7 +58,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <!--domande-->
+              <li id="question" class="dropdown">
                 <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-circle-question"></i>
                 </button>
@@ -67,7 +72,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <!--more-->
+              <li id="dots" class="dropdown">
                 <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </button>
@@ -83,7 +89,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown">
+              <!--notifiche-->
+              <li id="notify" class="dropdown">
                 <button class="btn dropdown-toggle notibell" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-bell"></i> 
                 </button>
@@ -102,32 +109,30 @@
       </div>
     </header>
     <!--contenitore della barra di lato e main menù-->
-    <main>
+    <main class="d-flex">
       <!--barra laterale-->
-      <div id="sidebar" class="d-flex py-4">
-        <div class="upper-icon-wrapper">
-          <ul class="ms-0 ps-0">
-            <li class="text-light py-2 mx-2 ps-3">
-              <i class="fa-solid fa-house px-1"></i>
-              <h5 class="d-inline-block">
-                Home
-              </h5>
-            </li>
-            <li class="text-light py-2 mx-2 ps-3">
-              <i class="fa-solid fa-chart-simple px-1"></i>
-              <h5 class="d-inline-block">
-                Stats
-              </h5>
-            </li>
-            <li class="text-light py-2 mx-2 ps-2">
-              <i class="fa-solid fa-signal px-1"></i>
-              <h5 class="d-inline-block">
-                Signals
-              </h5>
-            </li>
-          </ul>
-        </div>
-        <div class="settings-wrapper text-light mx-2 ps-3">
+      <div id="sidebar" class="d-flex flex-column justify-content-between align-items-stretch py-4">
+        <ul class="ms-0 ps-0 d-flex flex-wrap flex-column">
+          <li class="text-light py-2 mx-2 ps-3 icon-wrapper">
+            <i class="fa-solid fa-house px-1"></i>
+            <h5 class="d-inline-block">
+              Home
+            </h5>
+          </li>
+          <li class="text-light py-2 mx-2 ps-3 icon-wrapper">
+            <i class="fa-solid fa-chart-simple px-1"></i>
+            <h5 class="d-inline-block">
+              Stats
+            </h5>
+          </li>
+          <li class="text-light py-2 mx-2 ps-2 icon-wrapper">
+            <i class="fa-solid fa-signal px-1"></i>
+            <h5 class="d-inline-block">
+              Signals
+            </h5>
+          </li>
+        </ul>
+        <div class="settings-wrapper text-light mx-2 ps-3 icon-wrapper">
           <i class="fa-solid fa-gear px-1"></i>
           <h5 class="d-inline-block">
             Settings
@@ -164,11 +169,11 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col" class="col-6 ps-3">Nome</th>
-                        <th scope="col" class="col-2 text-center ">Data inizio</th>
-                        <th scope="col" class="col-1 text-center">ROI</th>
-                        <th scope="col" class="col-1 text-center">Stato</th>
-                        <th scope="col" class="col-2 text-center">Azioni</th>
+                        <th scope="col" class="col-5 col-lg-4 col-l-5 ps-3">Nome</th>
+                        <th scope="col" class="col-2 col-lg-3 col-l-2 text-center icon-none">Data inizio</th>
+                        <th scope="col" class="col-1 text-center icon-none">ROI</th>
+                        <th scope="col" class="col-2 col-md-1 text-center">Stato</th>
+                        <th scope="col" class="col-3 col-md-2 col-l-3 text-center">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -180,8 +185,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 75</span>
                         </td>
-                        <td class="text-center align-middle">15 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">15 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-green">
                             Done
@@ -204,8 +209,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 76</span>
                         </td>
-                        <td class="text-center align-middle">16 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">16 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-green">
                             Done
@@ -228,8 +233,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 77</span>
                         </td>
-                        <td class="text-center align-middle">17 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">17 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-yellow">
                             Process
@@ -252,8 +257,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 78</span>
                         </td>
-                        <td class="text-center align-middle">18 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">18 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-green">
                             Done
@@ -276,8 +281,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 79</span>
                         </td>
-                        <td class="text-center align-middle">19 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">19 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-red">
                             Failed
@@ -300,8 +305,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 80</span>
                         </td>
-                        <td class="text-center align-middle">20 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">20 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-green">
                             Done
@@ -324,8 +329,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 81</span>
                         </td>
-                        <td class="text-center align-middle">21 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">21 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-red">
                             Failed
@@ -348,8 +353,8 @@
                           </div>
                           <span class="align-middle ms-1">Classe 82</span>
                         </td>
-                        <td class="text-center align-middle">22 Feb 2021</td>
-                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle icon-none">22 Feb 2021</td>
+                        <td class="text-center align-middle icon-none">20%</td>
                         <td class="text-center align-middle">
                           <span class="badge text-light bg-my-green">
                             Done
@@ -446,11 +451,27 @@
               <!--list-->
               <div class="card my-3">
                 <ul class="list-group p-2">
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                  <li class="list-group-item">A fourth item</li>
-                  <li class="list-group-item">And a fifth one</li>
-                  <li class="list-group-item">And a fifth one</li>
+                  <li class="list-group-item">
+                    <div>
+                      <img src="img/stats.jpeg" alt="boolean-classes-statistics">
+                    </div>
+                    <div>
+                      <h4>
+                        Utenti Attivi
+                      </h4>
+                      <span class="fs-6">
+                        Lista degli utenti attivi in piattaforma nell'ultimo mese
+                      </span>
+                    </div>
+                  </li>
+                  <li class="list-group-item">Gennaio: 1200</li>
+                  <li class="list-group-item">Febbraio: 800</li>
+                  <li class="list-group-item">Marzo: 1500</li>
+                  <li class="list-group-item">
+                    <a class="text-decoration-underline" href="#">
+                      Visualizza report approfondito
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

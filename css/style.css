@@ -3,7 +3,7 @@
 :root {
     --primary-azure: #1b72e8;
     --primary-blue: #0d253b;
-    --primary-white: #f8f9fa;
+    --primary-white: #ffffff;
     --primary-grey: #e5e5e5;
     --secondary-orange: #f26551;
     --secondary-green: #198754;
@@ -16,6 +16,10 @@
 
 .text-my-yellow {
     color: var(--secondary-yellow);
+}
+
+.bg-my-white {
+    background-color: var(--primary-white);
 }
 
 .bg-my-green {
@@ -67,8 +71,7 @@ img {
 
 main {
     width: 100%;
-    height: calc(100% -80px);
-    display: flex;
+    height: calc(100% - 80px);
 }
 
 #macro-wrapper {
@@ -95,6 +98,10 @@ header {
     width: 150px;
 }
 
+.small-logo-wrapper {
+    width: 50px;
+}
+
 .input-group-text {
     background-color: var(--secondary-light-grey) !important;
     padding-right: 0px !important;
@@ -113,7 +120,7 @@ button.btn.notibell {
 }
 
 .btn.show {
-    border: 2px solid var(--secondary-light-grey);
+    border: 1px solid var(--secondary-light-grey);
 }
 
 .dropdown-toggle::after {
@@ -125,20 +132,10 @@ button.btn.notibell {
 
 #sidebar {
     width: 180px;
-    height: calc(100vh - 80px);
+    height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--primary-blue);
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-
-.upper-icon-wrapper {
-    height: calc(100% - 40px);
-}
-
-.settings-wrapper {
-   height: 40px; 
+    overflow-y: hidden;
 }
 
 /*main-menù*/
@@ -149,7 +146,8 @@ button.btn.notibell {
 
 #main-menù {
     width: calc(100% - 180px);
-    overflow-y: scroll;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .img-list-wrapper {
@@ -164,8 +162,24 @@ button.btn.notibell {
        width: 75px;
     } 
 
+    .icon-wrapper>h5 {
+        display: none !important;
+    }
+
+    #list, #question, #dots {
+        display: none !important;
+    }
+
     #main-menù {
         width: calc(100% - 75px);
     }
-   
+    
+}
+
+@media screen and (max-width:576px) {
+    
+    .icon-none {
+        display: none !important;
+    }
+
 }
