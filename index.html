@@ -1,151 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>b</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>b</title>
 </head>
+
 <body>
-    <div id="macro-wrapper">
-        <!--barra in alto di ricerca-->
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <!--logo (big e small)-->
-                    <div class="col"></div>
-                    <!--searchbar-->
-                    <div class="col"></div>
-                    <!--icone e dropdown-->
-                    <div class="col"></div>
+  <div id="macro-wrapper">
+    <!--barra in alto di ricerca-->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <!--logo (big e small)-->
+          <div class="col"></div>
+          <!--searchbar-->
+          <div class="col"></div>
+          <!--icone e dropdown-->
+          <div class="col"></div>
+        </div>
+      </div>
+    </header>
+    <!--contenitore della barra di lato e main menù-->
+    <main>
+      <!--barra laterale-->
+      <div id="sidebar">
+        <div class="upper-icon-wrapper">
+          <ul>
+            <li class="text-light py-1">
+              <i class="fa-solid fa-house px-1"></i>
+              <h5 class="d-inline-block">
+                Home
+              </h5>
+            </li>
+            <li class="text-light py-1">
+              <i class="fa-solid fa-chart-simple px-1"></i>
+              <h5 class="d-inline-block">
+                Stats
+              </h5>
+            </li>
+            <li class="text-light py-1">
+              <i class="fa-solid fa-signal px-1"></i>
+              <h5 class="d-inline-block">
+                Signals
+              </h5>
+            </li>
+          </ul>
+        </div>
+        <div class="settings-wrapper text-light">
+          <ul>
+            <li>
+              <i class="fa-solid fa-gear px-1"></i>
+              <h5 class="d-inline-block">
+                Settings
+              </h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--main menù che scrolla-->
+      <div id="main-menù">
+        <!--barra blu in alto che flexa i suoi elementi-->
+        <div class="container-fluid bg-primary">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!--megacontenitore necessario ad un utilizzare i row di bootstrap-->
+        <div class="container-fluid">
+          <!--wrapper che flexa tutte le card sotto-->
+          <div id="dashboard" class="row">
+            <!--parte che flexa a sinistra-->
+            <div class="col-12 col-lg-8 border-1">
+              <!--prossime classi-->
+              <div class="card my-3 pb-3">
+                <div class="card-header">
+                  <h2>
+                    Prossime classi
+                  </h2>
                 </div>
-            </div>
-        </header>
-        <!--contenitore della barra di lato e main menù-->
-        <main>
-            <!--barra laterale-->
-            <div id="sidebar">
-              <div class="upper-icon-wrapper">
-                <ul>
-                  <li class="text-light py-1">
-                    <i class="fa-solid fa-house"></i>
-                    <h5 class="d-inline-block">
-                      Home
-                    </h5>
-                  </li>
-                  <li class="text-light py-1">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <h5 class="d-inline-block">
-                      Stats
-                    </h5>
-                  </li>
-                  <li class="text-light py-1">
-                    <i class="fa-solid fa-signal"></i>
-                    <h5 class="d-inline-block">
-                      Signals
-                    </h5>
-                  </li>
-                </ul>
+                <!--tabella-->
+                <div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div class="settings-wrapper text-light">
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-gear"></i>
-                    <h5 class="d-inline-block">
-                      Settings
-                    </h5>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--main menù che scrolla-->
-            <div id="main-menù">
-                <!--barra blu in alto che flexa i suoi elementi-->
-                <div class="container-fluid bg-primary">
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+              <!--faq-->
+              <div class="card my-3">
+                <div class="card-header">
+                  <h2>
+                    F.A.Q
+                  </h2>
+                </div>
+                <!--accordion-->
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Come aggiungere un nuovo studente?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
                     </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Come posso accedere alle informazioni del mio account?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Posso usare questa dashboard da mobile?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!--megacontenitore necessario ad un utilizzare i row di bootstrap-->
-                <div class="container-fluid">
-                    <!--wrapper che flexa tutte le card sotto-->
-                    <div id="dashboard" class="row">
-                        <!--parte che flexa a sinistra-->
-                        <div class="col-12 col-lg-8 border-1">
-                            <!--prossime classi-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>
-                                        Prossime classi
-                                    </h2>
-                                </div>
-                                <!--tabella-->
-                                <div></div>
-                            </div>
-                            <!--faq-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>
-                                        F.A.Q
-                                    </h2>
-                                </div>
-                                <!--accordion-->
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          Accordion Item #1
-                                        </button>
-                                      </h2>
-                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Accordion Item #2
-                                        </button>
-                                      </h2>
-                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Accordion Item #3
-                                        </button>
-                                      </h2>
-                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--parte che flexa a destra-->
-                        <div class="col-12 col-lg-4 border-1">destra</div>
-                    </div>        
-                </div>
+              </div>
             </div>
-        </main>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <!--parte che flexa a destra-->
+            <div class="col-12 col-lg-4 border-1">
+              <!--to do-->
+              <div class="card my-3">
+                <div class="card-header">
+                  <h2>
+                    To do
+                  </h2>
+                </div>
+                <ul class="list-group border-1 p-3">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                    <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                    <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                    <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                  </li>
+                </ul>
+              </div>
+              <!--list-->
+              <div class="card my-3">
+                <ul class="list-group p-2">
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">A fourth item</li>
+                  <li class="list-group-item">And a fifth one</li>
+                  <li class="list-group-item">And a fifth one</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
 
 

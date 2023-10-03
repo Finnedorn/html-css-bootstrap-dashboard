@@ -73,7 +73,7 @@ main {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .upper-icon-wrapper {
@@ -90,4 +90,3 @@ main {
     width: calc(100% - 200px);
     overflow-y: auto;
 }
-
