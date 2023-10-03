@@ -107,19 +107,19 @@
       <div id="sidebar" class="d-flex py-4">
         <div class="upper-icon-wrapper">
           <ul class="ms-0 ps-0">
-            <li class="text-light py-2 ms-3 ps-3">
+            <li class="text-light py-2 mx-2 ps-3">
               <i class="fa-solid fa-house px-1"></i>
               <h5 class="d-inline-block">
                 Home
               </h5>
             </li>
-            <li class="text-light py-2 ms-3 ps-3">
+            <li class="text-light py-2 mx-2 ps-3">
               <i class="fa-solid fa-chart-simple px-1"></i>
               <h5 class="d-inline-block">
                 Stats
               </h5>
             </li>
-            <li class="text-light py-2 ms-3 ps-2">
+            <li class="text-light py-2 mx-2 ps-2">
               <i class="fa-solid fa-signal px-1"></i>
               <h5 class="d-inline-block">
                 Signals
@@ -127,7 +127,7 @@
             </li>
           </ul>
         </div>
-        <div class="settings-wrapper text-light ms-3 ps-3">
+        <div class="settings-wrapper text-light mx-2 ps-3">
           <i class="fa-solid fa-gear px-1"></i>
           <h5 class="d-inline-block">
             Settings
@@ -137,15 +137,17 @@
       <!--main menù che scrolla-->
       <div id="main-menù">
         <!--barra blu in alto che flexa i suoi elementi-->
-        <div class="container-fluid bg-primary">
-          <div class="row">
-            <div class="col"></div>
+        <div id="header-menù" class="container-fluid ">
+          <div class="row text-light">
+            <div class="col">
+              <h1>Boolean</h1>
+            </div>
             <div class="col"></div>
             <div class="col"></div>
           </div>
         </div>
         <!--megacontenitore necessario ad un utilizzare i row di bootstrap-->
-        <div class="container-fluid">
+        <div id="content-menù" class="container-fluid">
           <!--wrapper che flexa tutte le card sotto-->
           <div id="dashboard" class="row">
             <!--parte che flexa a sinistra-->
@@ -158,58 +160,209 @@
                   </h2>
                 </div>
                 <!--tabella-->
-                <div>
+                <div class="p-3 ">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col" class="col-6 ps-3">Nome</th>
+                        <th scope="col" class="col-2 text-center ">Data inizio</th>
+                        <th scope="col" class="col-1 text-center">ROI</th>
+                        <th scope="col" class="col-1 text-center">Stato</th>
+                        <th scope="col" class="col-2 text-center">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
+                      <!--tr1-->
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 75</span>
+                        </td>
+                        <td class="text-center align-middle">15 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-green">
+                            Done
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr2-->
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 76</span>
+                        </td>
+                        <td class="text-center align-middle">16 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-green">
+                            Done
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr3-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 77</span>
+                        </td>
+                        <td class="text-center align-middle">17 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-yellow">
+                            Process
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr4-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 78</span>
+                        </td>
+                        <td class="text-center align-middle">18 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-green">
+                            Done
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr5-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 79</span>
+                        </td>
+                        <td class="text-center align-middle">19 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-red">
+                            Failed
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr6-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 80</span>
+                        </td>
+                        <td class="text-center align-middle">20 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-green">
+                            Done
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr7-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 81</span>
+                        </td>
+                        <td class="text-center align-middle">21 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-red">
+                            Failed
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
+                      <!--tr8-->
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <td class="align-middle">
+                          <div class="icon d-inline-block img-list-wrapper align-middle">
+                            <img src="img/class-avatar.jpg" alt="avatar-logo">
+                          </div>
+                          <span class="align-middle ms-1">Classe 82</span>
+                        </td>
+                        <td class="text-center align-middle">22 Feb 2021</td>
+                        <td class="text-center align-middle">20%</td>
+                        <td class="text-center align-middle">
+                          <span class="badge text-light bg-my-green">
+                            Done
+                          </span>
+                        </td>
+                        <td class="text-center">
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button type="button" class="btn btn-outline-secondary">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -233,12 +386,7 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        Clicca sul + in alto nella sezione blu.
                       </div>
                     </div>
                   </div>
@@ -251,12 +399,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        Clicca sull'icona di lista nella barra in alto a destra.
                       </div>
                     </div>
                   </div>
@@ -269,12 +412,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        Certo! la Dasboard di Boolean è progettata per funzionare su tutti gli schermi: da monitor a mobile.
                       </div>
                     </div>
                   </div>
