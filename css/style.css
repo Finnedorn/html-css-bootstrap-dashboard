@@ -1,0 +1,93 @@
+/*palette*/
+
+:root {
+    --primary-azure: #1b72e8;
+    --primary-blue: #0d253b;
+    --primary-white: #f8f9fa;
+    --primary-grey: #e5e5e5;
+    --secondary-orange: #f26551;
+    --secondary-green: #198754;
+    --secondary-yellow: #ffc107;
+    --secondary-red: #dc3545;
+    --secondary-grey: #6c757d;
+}
+
+/*icons
+
+<i class="fa-solid fa-house"></i> --home
+<i class="fa-solid fa-chart-simple"></i> --stats
+<i class="fa-solid fa-signal"></i> --signal
+<i class="fa-solid fa-gear"></i> --settings
+<i class="fa-solid fa-magnifying-glass"></i> --search
+<i class="fa-solid fa-bell"></i> --notify
+<i class="fa-solid fa-circle-question"></i> --question
+<i class="fa-solid fa-list"></i> --list
+<i class="fa-solid fa-ellipsis-vertical"></i> --dots
+<i class="fa-solid fa-pen"></i> --modify
+<i class="fa-solid fa-trash"></i> --delete
+<i class="fa-solid fa-plus"></i> --add/plus
+
+*/
+
+/*miscellaneous*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+main {
+    width: 100%;
+    height: calc(100% -80px);
+    display: flex;
+}
+
+#macro-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.icon {
+    width: 30px;
+}
+
+/*sidebar*/
+
+#sidebar {
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--primary-blue);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.upper-icon-wrapper {
+    height: calc(100% - 40px);
+}
+
+.settings-wrapper {
+   height: 40px; 
+}
+
+/*main-menù*/
+
+#main-menù {
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
