@@ -170,6 +170,16 @@ button.btn.notibell {
     border-radius: 50px;
 }
 
+.btn-outline-secondary {
+    --bs-btn-hover-bg: #6c757d68 !important;
+}
+
+/*hover*/
+
+.icon-wrapper:hover {
+    background-color: #f8f9fa80;
+    border-radius: 5px;
+}
 
 @media screen and (max-width:992px) {
 
