@@ -12,6 +12,7 @@
     --secondary-light-grey: #e5e5e5;
     --secondary-grey: #6c757d;
     --secondary-dark-grey: #5b5858;
+    --secondary-dark-blue: #165bba;
 }
 
 .text-my-yellow {
@@ -34,6 +35,10 @@
     background-color: var(--secondary-red);
 }
 
+.bg-my-dark-blue {
+    background-color: var(--secondary-dark-blue);
+}
+
 /*icons
 
 <i class="fa-solid fa-house"></i> --home
@@ -46,6 +51,7 @@
 <i class="fa-solid fa-list"></i> --list
 <i class="fa-solid fa-ellipsis-vertical"></i> --dots
 <i class="fa-solid fa-pen"></i> --modify
+<i class="fa-solid fa-angles-right"></i> --next
 <i class="fa-solid fa-trash"></i> --delete
 <i class="fa-solid fa-plus"></i> --add/plus
 
@@ -85,6 +91,15 @@ main {
 
 .btn {
     color: var(--secondary-dark-grey) !important;
+}
+
+.button-light {
+    color: var(--primary-white) !important;
+
+}
+
+.btn-outline-light {
+    --bs-btn-hover-bg: #f8f9fa80 !important;
 }
 
 /*header*/

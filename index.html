@@ -143,12 +143,119 @@
       <div id="main-menù">
         <!--barra blu in alto che flexa i suoi elementi-->
         <div id="header-menù" class="container-fluid ">
-          <div class="row text-light">
-            <div class="col">
-              <h1>Boolean</h1>
+          <div class="row flex-md-row-reverse text-light py-3 align-items-center justify-content-between">
+            <!--add-->
+            <div class="col-12 col-md-4 py-2 pb-2">
+              <h5 class="d-inline-block pe-2">
+                Nuovo Studente
+              </h5>
+              <button type="button"  class="btn btn-outline-light mb-2 button-light" data-bs-toggle="offcanvas"  data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <!--offcanvas-->
+              <div class="offcanvas offcanvas-end w-50 p-2" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h3>
+                    Inserisci un nuovo studente
+                  </h3>
+                </div>
+                <div class="offcanvas-body container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div>
+                        <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                      </div>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Spagna</option>
+                        <option value="3">Grecia</option>
+                      </select>
+                    </div>
+                    <div class="col-3">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-3">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <!--students-->
+            <div class="col-12 col-md-4 py-2">
+              <h4>
+                Studenti online negli ultimi 30 minuti
+              </h4>
+              <h2 class="fs-2 ">125</h2>
+            </div>
+            <!--boolean badges-->
+            <div class="col-12 col-md-4 py-2">
+              <h2 class="d-inline-block pe-2">
+                Boolean
+              </h2>
+              <span class="badge rounded-pill bg-my-dark-blue">Piano Blaze</span><br>
+              <span class="badge rounded-pill bg-my-dark-blue">3 app</span>
+              <span class="d-inline-block">
+                <i class="fa-solid fa-angles-right text-light"></i>
+              </span>
+              <span class="badge rounded-pill bg-my-dark-blue d-xl-none">+</span>
+              <span class="badge rounded-pill bg-my-dark-blue d-none d-xl-inline-block">
+                Boolean mobile app
+              </span>
+              <span class="badge rounded-pill bg-my-dark-blue d-none d-xl-inline-block">
+                Boolean web app
+              </span>
+              <span class="badge rounded-pill bg-my-dark-blue d-none d-xl-inline-block">
+                Boolean blog app
+              </span>
+            </div>
           </div>
         </div>
         <!--megacontenitore necessario ad un utilizzare i row di bootstrap-->
@@ -492,6 +599,5 @@
 
 <!--la barra blu presenta un plus che permette di aprire un panel backdrop con un form, trovi tutto nella sezione offcanvas-->
 
-<!--dentro al  a sinistra del mainmenù trovo le card quella con le stat è una card con una tabella dentro -->
 
-<!--a destra c'è una ul con checkbox-->
+<!--col auto ai lati e col base al centro, in questo modo si bilanciano senza creare casini-->
