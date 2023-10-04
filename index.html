@@ -18,7 +18,7 @@
 
 <body>
   <div id="macro-wrapper">
-    <!--barra in alto di ricerca-->
+    <!--head bar-->
     <header>
       <div class="container-fluid bg-my-white">
         <div class="row justify-content-center align-items-center pt-3">
@@ -108,9 +108,8 @@
         </div>
       </div>
     </header>
-    <!--contenitore della barra di lato e main menù-->
     <main class="d-flex">
-      <!--barra laterale-->
+      <!--sidebar-->
       <div id="sidebar" class="d-flex flex-column justify-content-between align-items-stretch py-4">
         <ul class="ms-0 ps-0 d-flex flex-wrap flex-column">
           <li class="text-light py-2 mx-2 ps-3 icon-wrapper">
@@ -141,9 +140,9 @@
           </li>
         </ul>
       </div>
-      <!--main menù che scrolla-->
+      <!--main menù-->
       <div id="main-menù">
-        <!--barra blu in alto che flexa i suoi elementi-->
+        <!--main header-->
         <div id="header-menù" class="container-fluid ">
           <div class="row flex-md-row-reverse text-light py-3 align-items-center justify-content-between">
             <!--add-->
@@ -162,71 +161,109 @@
                   </h3>
                 </div>
                 <div class="offcanvas-body container-fluid">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                  <form class="row g-3 needs-validation" novalidate>
+                    <!--name-->
+                    <div class="col-12 col-md-6">
+                      <label for="validationCustom01" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="" required>
+                      <div class="invalid-feedback">
+                        Inserisci il tuo nome!
+                      </div>
+                      <div class="valid-feedback">
+                        Perfetto!
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <!--last name-->
+                    <div class="col-12 col-md-6">
+                      <label for="validationCustom02" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="" required>
+                      <div class="invalid-feedback">
+                        Inserisci il tuo cognome!
+                      </div>
+                      <div class="valid-feedback">
+                        Perfetto!
                       </div>
                     </div>
-                    <div class="col-6">
-                      <label for="exampleFormControlInput1" class="form-label">Email</label>
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <!--email-->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <label for="validationCustomUsername" class="form-label">Mail</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Inserisci una mail!
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1">
+                    <!--password-->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <label for="validationCustomUsername" class="form-label">Password</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend"></span>
+                        <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Inserisci una password valida!
+                        </div>
                       </div>
                     </div>
+                    <!--indirizzo-->
                     <div class="col-12">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      <label for="validationCustom03" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Inserisci un indirizzo!
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Città</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <!--città-->
+                    <div class="col-12 col-md-6">
+                      <label for="validationCustom03" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Inserisci una città!
                       </div>
                     </div>
-                    <div class="col-3">
-                      <div>
-                        <label for="exampleFormControlInput1" class="form-label">Stato</label>
-                      </div>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>Scegli...</option>
-                        <option value="1">Italia</option>
-                        <option value="2">Spagna</option>
-                        <option value="3">Grecia</option>
+                    <!--stato-->
+                    <div class="col-md-3">
+                      <label for="validationCustom04" class="form-label">Stato</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Scegli...</option>
+                        <option>Italia</option>
+                        <option>Spagna</option>
+                        <option>Grecia</option>
+                        <option>Germania</option>
+                        <option>Francia</option>
+                        <option>Altro</option>
                       </select>
-                    </div>
-                    <div class="col-3">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">CAP</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      <div class="invalid-feedback">
+                        Seleziona uno stato!
                       </div>
                     </div>
+                    <!--CAP-->
+                    <div class="col-md-3">
+                      <label for="validationCustom05" class="form-label">Cap</label>
+                      <input type="text" class="form-control" id="validationCustom05" required>
+                      <div class="invalid-feedback">
+                        Inserisci un CAP valido!
+                      </div>
+                    </div>
+                    <!--check-->
                     <div class="col-12">
-                      <div class="mb-3">
-                        <label for="formFile" class="form-label">Foto</label>
-                        <input class="form-control" type="file" id="formFile">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Aderisci ai termini e condizioni per proseguire
+                        </label>
+                        <div class="invalid-feedback">
+                          Devi aderire ai termini e condizioni per proseguire!
+                        </div>
                       </div>
                     </div>
-                    <div class="col">
-
+                    <!--submit/ reset-->
+                    <div class="col-12">
+                      <button class="btn btn-primary me-2 text-light" type="submit">Salva</button>
+                      <button class="btn btn-warning text-light" type="reset">Svuota</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -260,7 +297,7 @@
             </div>
           </div>
         </div>
-        <!--megacontenitore necessario ad un utilizzare i row di bootstrap-->
+        <!--main body-->
         <div id="content-menù" class="container-fluid">
           <!--wrapper che flexa tutte le card sotto-->
           <div id="dashboard" class="row">
@@ -278,11 +315,11 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col" class="col-5 col-lg-4 col-l-5 ps-3">Nome</th>
+                        <th scope="col" class="col-5 col-sm-4 col-lg-4 col-l-5 ps-3">Nome</th>
                         <th scope="col" class="col-2 col-lg-3 col-l-2 text-center icon-none">Data inizio</th>
                         <th scope="col" class="col-1 text-center icon-none">ROI</th>
-                        <th scope="col" class="col-2 col-md-1 text-center">Stato</th>
-                        <th scope="col" class="col-3 col-md-2 col-l-3 text-center">Azioni</th>
+                        <th scope="col" class="col-2 col-sm-1 text-center">Stato</th>
+                        <th scope="col" class="col-3 col-md-2 col-lg-3 text-center">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -595,11 +632,3 @@
 </body>
 
 </html>
-
-
-<!--la barra blu contiene degli elementi che si chiamano in gergo breadcrumb che puoi trovare in bootstrap sotto Badge-->
-
-<!--la barra blu presenta un plus che permette di aprire un panel backdrop con un form, trovi tutto nella sezione offcanvas-->
-
-
-<!--col auto ai lati e col base al centro, in questo modo si bilanciano senza creare casini-->
